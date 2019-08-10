@@ -7,6 +7,9 @@ import { SearchComponent } from './search/search.component';
 import { HomeComponent } from './home/home.component';
 import { WorkerCardComponent } from './worker-card/worker-card.component';
 import { ResultsComponent } from './results/results.component';
+import { LoginComponent } from './login/login.component';
+import { ProfileComponent } from './profile/profile.component';
+import { WorkerDashboardComponent } from './worker-dashboard/worker-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { ResultsComponent } from './results/results.component';
     SearchComponent,
     HomeComponent,
     WorkerCardComponent,
-    ResultsComponent
+    ResultsComponent,
+    LoginComponent,
+    ProfileComponent,
+    WorkerDashboardComponent
   ],
   imports: [
     BrowserModule,
