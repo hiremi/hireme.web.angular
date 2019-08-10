@@ -10,6 +10,7 @@ import { ResultsComponent } from './results/results.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { WorkerDashboardComponent } from './worker-dashboard/worker-dashboard.component';
+import { FeaturedWorkersComponent } from './featured-workers/featured-workers.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { WorkerDashboardComponent } from './worker-dashboard/worker-dashboard.co
     ResultsComponent,
     LoginComponent,
     ProfileComponent,
-    WorkerDashboardComponent
+    WorkerDashboardComponent,
+    FeaturedWorkersComponent
   ],
   imports: [
     BrowserModule,

@@ -5,7 +5,7 @@ import { ResultsComponent } from './results/results.component';
 import { ProfileComponent } from './profile/profile.component';
 import { WorkerDashboardComponent } from './worker-dashboard/worker-dashboard.component';
 import { LoginComponent } from './login/login.component';
-
+import {FeaturedWorkersComponent} from './featured-workers/featured-workers.component'
 const routes: Routes = [
   {
     path:'',
@@ -26,7 +26,7 @@ const routes: Routes = [
   {
     path: '/login',
     component: LoginComponent
-  },
+  }
 ];
 
 @NgModule({
