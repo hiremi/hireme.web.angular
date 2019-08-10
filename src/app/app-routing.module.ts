@@ -5,7 +5,8 @@ import { ResultsComponent } from './results/results.component';
 import { ProfileComponent } from './profile/profile.component';
 import { WorkerDashboardComponent } from './worker-dashboard/worker-dashboard.component';
 import { LoginComponent } from './login/login.component';
-import {FeaturedWorkersComponent} from './featured-workers/featured-workers.component'
+import { AuthComponent } from './auth/auth.component';
+
 const routes: Routes = [
   {
     path:'',
@@ -24,11 +25,10 @@ const routes: Routes = [
     component: WorkerDashboardComponent
   },
   {
-    path: 'login',
-    component: LoginComponent
+    path: 'auth',
+    component: AuthComponent
   }
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

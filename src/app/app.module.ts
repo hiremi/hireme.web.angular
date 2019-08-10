@@ -12,6 +12,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { WorkerDashboardComponent } from './worker-dashboard/worker-dashboard.component';
 import { FeaturedWorkersComponent } from './featured-workers/featured-workers.component';
 import { WorkerCardTwoComponent } from './worker-card-two/worker-card-two.component';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { WorkerCardTwoComponent } from './worker-card-two/worker-card-two.compon
     ProfileComponent,
     WorkerDashboardComponent,
     FeaturedWorkersComponent,
-    WorkerCardTwoComponent
+    WorkerCardTwoComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
