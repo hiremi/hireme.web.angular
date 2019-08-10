@@ -27,9 +27,34 @@
     .card-title {
         font-size: 16px;
         font-weight: bold;
+        margin-left: 20px;
     }
     
     .col-md-3 {
         flex: 0 0 20%;
+    }
+
+    #star-container {
+        float: right;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .icon {
+        height: 15px;
+        width: 15px;
+    }
+
+    .fa {
+        margin: 5px;
+    }
+
+    .fa-star {
+        color: #fed325;
+    }
+
+    .fa-diamond {
+        color: #00478b
     }
 }
