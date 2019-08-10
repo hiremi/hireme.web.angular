@@ -12,19 +12,19 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: '/results',
+    path: 'results',
     component: ResultsComponent
   },
   {
-    path: '/profile',
+    path: 'profile',
     component: ProfileComponent
   },
   {
-    path: '/worker-dashboard',
+    path: 'worker-dashboard',
     component: WorkerDashboardComponent
   },
   {
-    path: '/login',
+    path: 'login',
     component: LoginComponent
   }
 ];
