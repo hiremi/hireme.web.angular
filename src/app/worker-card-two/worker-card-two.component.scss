@@ -1,0 +1,60 @@
+#worker-card {
+    .card-img {
+        width: 150px;
+        height: 150px;
+        vertical-align: middle;
+    }
+    
+    .card {
+        width: 90%;
+        height: 150px;
+    }
+    
+    .mb-4 {
+        margin: 0;
+    }
+    
+    #cardSubtitle {
+        font-size: 13px;
+    }
+    
+    .card-contact {
+        font-size: 14px;
+        margin-bottom: 5px;
+    
+    }
+    
+    .card-title {
+        font-size: 16px;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+    
+    .col-md-3 {
+        flex: 0 0 20%;
+    }
+
+    #star-container {
+        float: right;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .icon {
+        height: 15px;
+        width: 15px;
+    }
+
+    .fa {
+        margin: 5px;
+    }
+
+    .fa-star {
+        color: #fed325;
+    }
+
+    .fa-diamond {
+        color: #00478b
+    }
+}
