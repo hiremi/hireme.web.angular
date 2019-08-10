@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class SearchComponent implements OnInit {
 
   constructor() {
-    
    }
 
   ngOnInit() {
