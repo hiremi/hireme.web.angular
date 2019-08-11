@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,9 +13,9 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { WorkerDashboardComponent } from './worker-dashboard/worker-dashboard.component';
 import { FeaturedWorkersComponent } from './featured-workers/featured-workers.component';
-import { WorkerCardTwoComponent } from './worker-card-two/worker-card-two.component';
 import { AuthComponent } from './auth/auth.component';
-import { HttpClientModule } from '@angular/common/http';
+import { CertificationComponent } from './certification/certification.component';
+import { ReviewComponent } from './review/review.component';
 
 @NgModule({
   declarations: [
@@ -26,8 +28,9 @@ import { HttpClientModule } from '@angular/common/http';
     ProfileComponent,
     WorkerDashboardComponent,
     FeaturedWorkersComponent,
-    WorkerCardTwoComponent,
-    AuthComponent
+    AuthComponent,
+    CertificationComponent,
+    ReviewComponent
   ],
   imports: [
     BrowserModule,
