@@ -32,6 +32,61 @@
       </div>
       <div class="col-lg-4 col-xs-12">
         <button type="button" id="hireme-button-container" class="btn hireme-button btn-outline-primary">Request a Quote</button>
+          <div class="text-align-aj">
+            <h5 class="card-title">Harry Patterson</h5>
+            <p class="card-text">I am a plumber from papine Jamaica. My contact number is: 1876-123-3432. You can
+              contact me at myemail@email.com
+              content.
+            </p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-xs-12">
+        <button type="button" class="btn hireme-button btn-outline-primary" data-toggle="modal"
+          data-target="#request_quote">Request A Quote</button>
+        <!-- Modal -->
+        <div class="modal fade" id="request_quote" tabindex="-1" role="dialog" aria-labelledby="request_quote"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="request_quote_label">Request a Quote</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" [formControl]="name" id="name" class="form-control" placeholder="Enter Your Name"
+                    aria-describedby="helpId">
+                </div>
+                <div class="form-group">
+                  <label for="email"> Email </label>
+                  <input type="email" [formControl]="email" class="form-control" id="email"
+                    placeholder="Enter Your Email">
+                </div>
+                <div class="form-group">
+                  <label for="tel"> Phone Number </label>
+                  <input type="tel" [formControl]="tel" class="form-control" id="tel"
+                    placeholder="Enter Your Telephone Number">
+                </div>
+                <div class="form-group">
+                  <label for="message">Enter Your Message</label>
+                  <textarea class="form-control" [formControl]="message" id="message" rows="4"
+                    placeholder="Enter Your Message"></textarea>
+
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" (click)="getUsers()">Send Quote</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
