@@ -82,88 +82,44 @@ export class ProfileComponent implements OnInit {
     //  console.log(this.httpClient.get('http://calico.palisadoes.org:8081/users'));
 
   }
-  data = {
-    "@components": {
-      "actions": {
-        "@id": "http://calico.palisadoes.org:8081/users/@actions"
-      },
-      "breadcrumbs": {
-        "@id": "http://calico.palisadoes.org:8081/users/@breadcrumbs"
-      },
-      "navigation": {
-        "@id": "http://calico.palisadoes.org:8081/users/@navigation"
-      },
-      "types": {
-        "@id": "http://calico.palisadoes.org:8081/users/@types"
-      },
-      "workflow": {
-        "@id": "http://calico.palisadoes.org:8081/users/@workflow"
-      }
+  
+  data = [
+    {
+      name: 'Shantal Laing',
+      url: "http://calico.palisadoes.org:8081/users/copy3_of_skill1/view/++widget++form.widgets.profile_picture/@@download/yaba-blay-author.jpg",
+      title: 'Domestic Worker',
+      location: '9 Redmore Road,Kingston 7',
+      email: ' slaing@hiremi.com ',
+      phone: '1876-123-4567',
+      description: 'I have worked for several clients and sometimes undertake nanny-type duties'
     },
-    "@id": "http://calico.palisadoes.org:8081/users/",
-    "@type": "Folder",
-    "UID": "6351e767ce14424e99747db6a0efef2f",
-    "allow_discussion": false,
-    "contributors": [],
-    "created": "2019-08-10T13:43:11+00:00",
-    "creators": [
-      "admin"
-    ],
-    "description": "the users",
-    "effective": "2019-08-10T08:48:12",
-    "exclude_from_nav": true,
-    "expires": null,
-    "id": "users",
-    "is_folderish": true,
-    "items": [
-      {
-        "@id": "http://calico.palisadoes.org:8081/users/skill1",
-        "@type": "skillworker",
-        "description": "I have worked for several clients and sometimes undertake nanny-type duties",
-        "review_state": "published",
-        "title": "Domestic Worker"
-      },
-      {
-        "@id": "http://calico.palisadoes.org:8081/users/copy_of_skill1",
-        "@type": "skillworker",
-        "description": "I am a plumber from Kingston. I do both on-demand and contract work.",
-        "review_state": "published",
-        "title": "Certified Plumber"
-      },
-      {
-        "@id": "http://calico.palisadoes.org:8081/users/copy2_of_skill1",
-        "@type": "skillworker",
-        "description": "I do new building wiring,  small system maintenance and minor generator repairs.",
-        "review_state": "published",
-        "title": "Electrician"
-      },
-      {
-        "@id": "http://calico.palisadoes.org:8081/users/copy3_of_skill1",
-        "@type": "skillworker",
-        "description": "I am proficient in building websites and mobile phone applications",
-        "review_state": "published",
-        "title": "Web Developer"
-      }
-    ],
-    "items_total": 4,
-    "language": {
-      "title": "English (USA)",
-      "token": "en-us"
+    {
+      name: 'Harry Patterson',
+      url: "http://calico.palisadoes.org:8081/users/copy_of_skill1/view/++widget++form.widgets.profile_picture/@@download/bh.jpeg",
+      title: 'Certified Plumber',
+      location: 'Sturrey Street, Kingston 10',
+      email: 'hpatterson@hiremi.com',
+      phone: '1876-654-7896',
+      description: 'I am a plumber from Kingston. I do both on-demand and contract work.'
     },
-    "layout": "listing_view",
-    "modified": "2019-08-10T14:03:50+00:00",
-    "nextPreviousEnabled": false,
-    "parent": {
-      "@id": "http://calico.palisadoes.org:8081",
-      "@type": "Plone Site",
-      "description": "",
-      "title": "COC"
+    {
+      name: 'Peter Johnson',
+      url: "http://calico.palisadoes.org:8081/users/copy2_of_skill1/view/++widget++form.widgets.profile_picture/@@download/7jhg.jpeg",
+      title: 'Electrician',
+      location: '14 Derrymore Road, Kingston 10',
+      email: 'carl@hiremi.com',
+      phone: '1876-345-9877',
+      description: 'I do new building wiring, small system maintenance and minor generator repairs.'
     },
-    "relatedItems": [],
-    "review_state": "published",
-    "rights": null,
-    "subjects": [],
-    "title": "Users",
-    "version": "current"
-  }
+    {
+      name: 'Jody Silvera',
+      url: 'http://calico.palisadoes.org:8081/users/copy3_of_skill1/view/++widget++form.widgets.profile_picture/@@download/yaba-blay-author.jpg',
+      title: 'Web Developer',
+      location: 'Yemen Avenue,Browns Town',
+      email: 'jodys3@hiremi.com',
+      phone: '1876-783-0303',
+      description: 'I am proficient in building websites and mobile phone applications.'
+    
+    },
+  ]
 }

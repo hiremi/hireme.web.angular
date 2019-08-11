@@ -16,6 +16,7 @@ import { FeaturedWorkersComponent } from './featured-workers/featured-workers.co
 import { AuthComponent } from './auth/auth.component';
 import { CertificationComponent } from './certification/certification.component';
 import { ReviewComponent } from './review/review.component';
+import { WorkerCardTwoComponent } from './worker-card-two/worker-card-two.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ReviewComponent } from './review/review.component';
     FeaturedWorkersComponent,
     AuthComponent,
     CertificationComponent,
-    ReviewComponent
+    ReviewComponent,
+    WorkerCardTwoComponent
   ],
   imports: [
     BrowserModule,

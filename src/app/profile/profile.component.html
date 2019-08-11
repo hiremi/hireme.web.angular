@@ -3,7 +3,7 @@
     <div class="row no-gutters card-container">
       <div class="col-lg-2 col-xs-12">
         <img
-          src="https://profiles.howard.edu/sites/profiles.howard.edu/files/styles/large/public/adeboye.jpg?itok=2sHn38Dr"
+          src={{data[0].url}}
           class="card-img" alt="...">
       </div>
       <div class="col-lg-6 col-xs-12">
@@ -11,7 +11,7 @@
           <div class='row'>
               <div class='col-md-8'>
                   <div class='row'>
-                      <h5 class="card-title text-primary"><a routerLink="/profile">Harry Patterson</a></h5>
+                      <h5 class="card-title text-primary"><a routerLink="/profile">{{data[0].name}}</a></h5>
                       <i class='fa fa-diamond'></i>
                   </div>
               </div>
@@ -25,9 +25,9 @@
                   </div>
               </div>
           </div>     
-          <p id="cardSubtitle" class="card-text text-secondary">Certified Plumber, Kingston, Jamaica</p>
-          <p class="card-text card-contact text-info">Phone Number: (876) 937-5139</p>
-          <p class="card-text card-contact text-info">Email Address: harryp@gmail.com</p>
+          <p id="cardSubtitle" class="card-text text-secondary">{{data[0].description }} <br/> {{data[0].location}}</p>
+          <p class="card-text card-contact text-info">Phone Number: {{data[0].phone}}</p>
+          <p class="card-text card-contact text-info">Email Address: {{data[0].email}}</p>
         </div>
       </div>
       <div class="col-lg-4 col-xs-12">
