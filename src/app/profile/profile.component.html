@@ -1,4 +1,4 @@
-<div class="container">
+<div id="profile" class="container">
   <div class="card mb-3">
     <div class="row no-gutters card-container">
       <div class="col-lg-2 col-xs-12">
@@ -8,18 +8,30 @@
       </div>
       <div class="col-lg-6 col-xs-12">
         <div class="card-body">
-          <div class="text-align-aj">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content.
-              This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-
-          </div>
-        </div>
+          <div class='row'>
+              <div class='col-md-8'>
+                  <div class='row'>
+                      <h5 class="card-title text-primary"><a routerLink="/profile">Harry Patterson</a></h5>
+                      <i class='fa fa-diamond'></i>
+                  </div>
+              </div>
+              <div class='col-md-4'>
+                  <div id='star-container' class='col-md-3'>
+                          <i class='fa fa-star'></i>
+                          <i class='fa fa-star'></i>
+                          <i class='fa fa-star'></i>
+                          <i class='fa fa-star'></i>
+                          <i class='fa fa-star'></i>
+                  </div>
+              </div>
+          </div>     
+          <p id="cardSubtitle" class="card-text text-secondary">Certified Plumber, Kingston, Jamaica</p>
+          <p class="card-text card-contact text-info">Phone Number: (876) 937-5139</p>
+          <p class="card-text card-contact text-info">Email Address: harryp@gmail.com</p>
+      </div>
       </div>
       <div class="col-lg-4 col-xs-12">
-        <button type="button" class="btn hireme-button btn-outline-primary">Request a Quote</button>
+        <button type="button" id="hireme-button-container" class="btn hireme-button btn-outline-primary">Request a Quote</button>
       </div>
 
     </div>
@@ -61,9 +73,11 @@
       <div class="row">
         <div class="col-lg-6">
           <h3>Certifications</h3>
+          <app-certifcation></app-certifcation>
         </div>
         <div class="col-lg-6">
           <h3>Reviews</h3>
+          <app-review></app-review>
         </div>
       </div>
     </div>
