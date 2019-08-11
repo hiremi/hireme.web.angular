@@ -16,7 +16,6 @@ import { FeaturedWorkersComponent } from './featured-workers/featured-workers.co
 import { AuthComponent } from './auth/auth.component';
 import { CertificationComponent } from './certification/certification.component';
 import { ReviewComponent } from './review/review.component';
-import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
